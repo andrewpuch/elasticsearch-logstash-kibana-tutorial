@@ -21,12 +21,19 @@ nano elasticsearch.yml
 Config
 ------
 cluster.name: awstutorialseries
+
 cloud.aws.access_key: ACCESS_KEY_HERE
+
 cloud.aws.secret_key: SECRET_KEY_HERE
+
 cloud.aws.region: us-east-1
+
 discovery.type: ec2
+
 discovery.ec2.tag.Name: "AWS Tutorial Series - Elasticsearch"
+
 http.cors.enabled: true
+
 http.cors.allow-origin: "*"
 
 Commands
