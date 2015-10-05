@@ -25,6 +25,8 @@ cd /usr/share/elasticsearch/
 
 ./bin/plugin install elasticsearch/elasticsearch-cloud-aws/2.7.1
 
+./bin/plugin --install lmenezes/elasticsearch-kopf/1.5.7
+
 cd /etc/elasticsearch
 
 nano elasticsearch.yml
