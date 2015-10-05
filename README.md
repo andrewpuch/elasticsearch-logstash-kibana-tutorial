@@ -1,6 +1,6 @@
-Amazon Linux AMI 2014.09.2
+Amazon Linux AMI 2015.09
 
-Elasticsearch 1.4.4
+Elasticsearch 1.7.2
 ===================
 
 Commands
@@ -11,11 +11,11 @@ yum update -y
 
 cd /root
 
-wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.4.4.noarch.rpm
+wget https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-1.7.2.noarch.rpm
 
-yum install elasticsearch-1.4.4.noarch.rpm -y
+yum install elasticsearch-1.7.2.noarch.rpm -y
 
-rm -f elasticsearch-1.4.4.noarch.rpm
+rm -f elasticsearch-1.7.2.noarch.rpm
 
 cd /usr/share/elasticsearch/
 
@@ -23,7 +23,7 @@ cd /usr/share/elasticsearch/
 
 ./bin/plugin -install lukas-vlcek/bigdesk
 
-./bin/plugin install elasticsearch/elasticsearch-cloud-aws/2.4.1
+./bin/plugin install elasticsearch/elasticsearch-cloud-aws/2.7.1
 
 cd /etc/elasticsearch
 
@@ -52,7 +52,7 @@ Commands
 service elasticsearch start 
 
 
-Logstash 1.4.2
+Logstash 1.5.4-1
 ==============
 
 Commands
@@ -63,11 +63,11 @@ yum update -y
 
 cd /root
 
-wget https://download.elasticsearch.org/logstash/logstash/packages/centos/logstash-1.4.2-1_2c0f5a1.noarch.rpm
+wget https://download.elastic.co/logstash/logstash/packages/centos/logstash-1.5.4-1.noarch.rpm
 
-yum install logstash-1.4.2-1_2c0f5a1.noarch.rpm -y
+yum install logstash-1.5.4-1.noarch.rpm -y
 
-rm -f logstash-1.4.2-1_2c0f5a1.noarch.rpm
+rm -f logstash-1.5.4-1.noarch.rpm
 
 nano /etc/logstash/conf.d/logstash.conf
 
@@ -80,7 +80,7 @@ Commands
 service logstash start
 
 
-Kibana 4.0.1
+Kibana 4.1.2
 ============
 
 Commands
@@ -91,13 +91,13 @@ yum update -y
 
 cd /root
 
-wget https://download.elasticsearch.org/kibana/kibana/kibana-4.0.1-linux-x64.tar.gz
+wget https://download.elastic.co/kibana/kibana/kibana-4.1.2-linux-x64.tar.gz
 
-tar xzf kibana-4.0.1-linux-x64.tar.gz
+tar xzf kibana-4.1.2-linux-x64.tar.gz
 
-rm -f kibana-4.0.1-linux-x64.tar.gz
+rm -f kibana-4.1.2-linux-x64.tar.gz
 
-cd kibana-4.0.1-linux-x64
+cd kibana-4.1.2-linux-x64
 
 nano config/kibana.yml 
 
